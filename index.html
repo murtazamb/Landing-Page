@@ -5,7 +5,73 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Murtaza Boriyawala | Mechanical Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Page-specific overrides (so you don't HAVE to touch style.css) -->
+  <style>
+    /* Make action cards bigger + more clickable */
+    .actions{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:14px;
+      margin-top:16px;
+    }
+    .cardlink{
+      display:block;
+      padding:18px 18px;
+      border:1px solid #e9e9e9;
+      border-radius:18px;
+      background:#fff;
+      text-decoration:none;
+      color:inherit;
+      transition: transform .12s ease, box-shadow .12s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+    .cardlink:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
+    .cardlink strong{
+      font-size:1.05rem;
+      display:inline-block;
+      margin-bottom:4px;
+    }
+    .cardlink .small{
+      font-size:.95rem;
+      opacity:.85;
+    }
+
+    /* Better badge wrapping + spacing */
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+    .badge{
+      padding:8px 12px;
+      border:1px solid #e9e9e9;
+      border-radius:999px;
+      background:#fafafa;
+      font-size:.95rem;
+      white-space:nowrap;
+    }
+
+    /* Quick overview block a bit nicer */
+    .overview{
+      border:1px solid #eee;
+      background:#fafafa;
+      border-radius:18px;
+      padding:16px 18px;
+    }
+    .overview ul{
+      margin:10px 0 0 18px;
+    }
+    .overview li{
+      margin:6px 0;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
@@ -28,44 +94,62 @@
     <img src="assets/profile.jpg" alt="Murtaza headshot" />
     <div>
       <h1 style="margin:0 0 6px;">Murtaza Boriyawala</h1>
-      <div class="small">
+
+      <!-- Expanded section below your name -->
+      <div class="small" style="line-height:1.55;">
         Junior Mechanical Engineering Student • University of Massachusetts Amherst • Graduation: May 2027<br/>
-        Interests: Mechanical Design • CAD/FEA • Manufacturing • Mechatronics
+        I build practical mechanical systems from concept to prototype—CAD, manufacturing, and analysis—with a strong focus on
+        design-for-manufacturing and clear engineering documentation.<br/>
+        Interests: Mechanical Design • CAD/FEA • Manufacturing • Mechatronics • Product Development
       </div>
 
+      <!-- Expanded skills/badges -->
       <div class="badges">
         <div class="badge">SolidWorks</div>
+        <div class="badge">Fusion 360</div>
         <div class="badge">MATLAB</div>
-        <div class="badge">ANSYS</div>
-        <div class="badge">Manufacturing</div>
-        <div class="badge">Team Projects</div>
+        <div class="badge">ANSYS (FEA)</div>
+        <div class="badge">DFM / Tolerancing</div>
+        <div class="badge">Machining (Mill/Drill/Bandsaw)</div>
+        <div class="badge">3D Printing</div>
+        <div class="badge">Manufacturing Processes</div>
+        <div class="badge">Team Projects (ASME / Mass Mileage)</div>
       </div>
 
+      <!-- Bigger clickable cards, GitHub removed -->
       <div class="actions">
         <a class="cardlink" href="projects.html">
-          <strong>Project Gallery</strong><br/><span class="small">See my work in a grid</span>
+          <strong>🧩 Project Gallery</strong><br/><span class="small">See my work in a grid</span>
         </a>
         <a class="cardlink" href="assets/cv.pdf" target="_blank" rel="noopener">
-          <strong>Download CV (PDF)</strong><br/><span class="small">One-click resume</span>
+          <strong>📄 Download CV (PDF)</strong><br/><span class="small">One-click resume</span>
         </a>
         <a class="cardlink" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">
-          <strong>LinkedIn</strong><br/><span class="small">Connect with me</span>
+          <strong>🔗 LinkedIn</strong><br/><span class="small">Connect with me</span>
         </a>
         <a class="cardlink" href="contact.html">
-          <strong>Contact</strong><br/><span class="small">Email + links</span>
-        </a>
-        <a class="cardlink" href="https://github.com/murtazamb" target="_blank" rel="noopener">
-          <strong>GitHub</strong><br/><span class="small">My repos</span>
+          <strong>✉️ Contact</strong><br/><span class="small">Email + links</span>
         </a>
       </div>
     </div>
   </section>
 
   <h2 class="section-title">Quick Overview</h2>
-  <p class="small">
-    I’m a junior Mechanical Engineering student focused on hands-on design and analysis, with experience in CAD,
-    manufacturing processes, and engineering documentation. This portfolio highlights my projects and the technical work behind them.
-  </p>
+
+  <!-- Stronger quick overview -->
+  <div class="overview">
+    <p class="small" style="margin:0; line-height:1.6;">
+      I’m a junior Mechanical Engineering student who enjoys turning ideas into real, testable designs. My work combines CAD,
+      hands-on manufacturing, and engineering analysis (stress, deflection, fatigue/buckling where applicable). I’ve contributed
+      to team-based builds through ASME and Mass Mileage, and I’m constantly improving my ability to design parts that are both
+      functional and manufacturable.
+    </p>
+    <ul class="small">
+      <li><strong>Design + CAD:</strong> part modeling, assemblies, drawing packages, and clean documentation.</li>
+      <li><strong>Analysis mindset:</strong> validating designs using mechanics concepts and FEA where appropriate.</li>
+      <li><strong>Hands-on build experience:</strong> machining + prototyping workflows and iteration based on constraints.</li>
+    </ul>
+  </div>
 
   <div class="footer">© 2025 Murtaza Boriyawala • Built with GitHub Pages</div>
 </main>
