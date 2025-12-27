@@ -27,92 +27,89 @@
 
   <!-- Title + quick summary -->
   <section style="padding:18px; border:1px solid #eee; border-radius:18px; background:#fafafa;">
-    <div class="small" style="margin-bottom:6px;">Category: CAD / Manufacturing / Analysis</div>
-    <h1 style="margin:0 0 8px;">Project 1 Title</h1>
+    <div class="small" style="margin-bottom:6px;">Category: Electronics / Embedded Systems / Prototyping</div>
+    <h1 style="margin:0 0 8px;">Light-Activated Arduino Car</h1>
     <p class="small" style="margin:0;">
-      Write 2–3 sentences: what the project is, what problem it solves, and your role.
-      Keep it simple and technical.
+      Designed and built an Arduino-based car prototype that responds to sensor input and light conditions.
+      The system uses custom Arduino code to control motors and LEDs through external circuitry.
     </p>
   </section>
 
   <!-- Photo gallery -->
   <h2 class="section-title">Gallery</h2>
 
-  <!-- Large clickable images (opens the image file in a new tab) -->
   <section class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
     <a class="project" href="../assets/projects/project1-1.jpg" target="_blank" rel="noopener">
-      <img src="../assets/projects/project2-1.jpg" alt="Project 2 image 1" style="height:220px; object-fit:contain; background:#fff;">
+      <img src="../assets/projects/project2-1.jpg" alt="Initial prototype setup" style="height:220px; object-fit:contain; background:#fff;">
       <div class="project-body">
-        <h3 style="margin:0 0 6px;">Photo 1 caption</h3>
-        <p>1 line: what this image shows (assembly, test setup, CAD render, etc.).</p>
+        <h3 style="margin:0 0 6px;">Light-activated car prototype</h3>
+        <p>Initial test setup using a CDS cell to detect bright light and control motor activation with LED indicators.</p>
       </div>
     </a>
 
     <a class="project" href="../assets/projects/project1-2.jpg" target="_blank" rel="noopener">
-      <img src="../assets/projects/project2-2.jpg" alt="Project 2 image 2" style="height:220px; object-fit:contain; background:#fff;">
+      <img src="../assets/projects/project2-2.jpg" alt="Sensor testing" style="height:220px; object-fit:contain; background:#fff;">
       <div class="project-body">
-        <h3 style="margin:0 0 6px;">Photo 2 caption</h3>
-        <p>1 line: what this image shows.</p>
+        <h3 style="margin:0 0 6px;">Sensor testing setup</h3>
+        <p>Bench testing of the Arduino, sonar sensor, and LED outputs before full integration.</p>
       </div>
     </a>
 
     <a class="project" href="../assets/projects/project1-3.jpg" target="_blank" rel="noopener">
-      <img src="../assets/projects/project2-3.jpg" alt="Project 2 image 3" style="height:220px; object-fit:contain; background:#fff;">
+      <img src="../assets/projects/project2-3.jpg" alt="Final assembly" style="height:220px; object-fit:contain; background:#fff;">
       <div class="project-body">
-        <h3 style="margin:0 0 6px;">Photo 3 caption</h3>
-        <p>1 line: what this image shows.</p>
+        <h3 style="margin:0 0 6px;">Integrated car assembly</h3>
+        <p>Fully assembled prototype with motors, wiring, sensors, and power system mounted on the chassis.</p>
       </div>
     </a>
   </section>
 
-  <!-- Two-column section: Overview + Details -->
+  <!-- Two-column section -->
   <section style="margin-top:18px; display:grid; grid-template-columns: 1.2fr 0.8fr; gap:14px;">
-    <!-- Left: Overview -->
+
+    <!-- Overview -->
     <div style="border:1px solid #eee; border-radius:18px; padding:16px; background:#fff;">
       <h2 class="section-title" style="margin-top:0;">Overview</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
-        <li><strong>Goal:</strong> What you were trying to achieve.</li>
-        <li><strong>Constraints:</strong> Size/weight/cost/time/manufacturing limits.</li>
-        <li><strong>Your role:</strong> What you personally did.</li>
-        <li><strong>Approach:</strong> CAD → prototype → test → iterate (or whatever you did).</li>
+        <li><strong>Goal:</strong> Build a small autonomous car controlled by sensor input using Arduino.</li>
+        <li><strong>Constraints:</strong> Limited power, compact size, simple circuitry, and basic components.</li>
+        <li><strong>Your role:</strong> Designed the circuit, wrote the Arduino code, assembled and tested the system.</li>
+        <li><strong>Approach:</strong> Circuit design → Arduino programming → bench testing → full prototype integration.</li>
       </ul>
 
       <h2 class="section-title">What I Learned</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
-        <li>Technical learning (tolerances, stress, control, manufacturing, etc.).</li>
-        <li>Process learning (iteration, teamwork, documentation, testing).</li>
+        <li>Using transistors to safely drive motors from an Arduino.</li>
+        <li>Debugging embedded systems through iterative testing.</li>
       </ul>
     </div>
 
-    <!-- Right: Tools + Results -->
+    <!-- Tools + Results -->
     <div style="border:1px solid #eee; border-radius:18px; padding:16px; background:#fff;">
       <h2 class="section-title" style="margin-top:0;">Tools & Skills</h2>
       <div class="badges" style="margin-top:8px;">
-        <div class="badge">SolidWorks</div>
-        <div class="badge">ANSYS</div>
-        <div class="badge">MATLAB</div>
-        <div class="badge">DFM</div>
+        <div class="badge">Arduino</div>
+        <div class="badge">Embedded C</div>
+        <div class="badge">Circuit Design</div>
+        <div class="badge">Prototyping</div>
         <div class="badge">Testing</div>
       </div>
 
       <h2 class="section-title">Results</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
-        <li>Add 1 measurable result (weight, time, tolerance, stress, cost).</li>
-        <li>Add another result (performance improvement, iteration count, etc.).</li>
+        <li>Successfully controlled motors using a TIP120 transistor circuit.</li>
+        <li>Achieved reliable sensor-based activation and LED status indication.</li>
       </ul>
 
       <h2 class="section-title">Links</h2>
       <div class="actions" style="grid-template-columns: 1fr; margin-top:8px;">
-        <a class="cardlink" href="PASTE_GITHUB_REPO_LINK" target="_blank" rel="noopener">
-          <strong>GitHub Repo</strong><br><span class="small">Code / files</span>
-        </a>
         <a class="cardlink" href="../projects.html">
           <strong>Back to Gallery</strong><br><span class="small">Return to projects</span>
         </a>
       </div>
     </div>
-  </section>
 
+  </section>
 
 </main>
 </body>
