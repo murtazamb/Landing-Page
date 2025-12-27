@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Project 1 | Murtaza Boriyawala</title>
+  <title>Project 2 | Murtaza Boriyawala</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -19,7 +19,7 @@
         <a href="../contact.html">Contact</a>
       </div>
     </div>
-    <div class="brand">Project 1</div>
+    <div class="brand">Project 2</div>
   </div>
 </header>
 
@@ -30,8 +30,8 @@
     <div class="small" style="margin-bottom:6px;">Category: Electronics / Embedded Systems / Prototyping</div>
     <h1 style="margin:0 0 8px;">Light-Activated Arduino Car</h1>
     <p class="small" style="margin:0;">
-      Designed and built an Arduino-based car prototype that responds to sensor input and light conditions.
-      The system uses custom Arduino code to control motors and LEDs through external circuitry.
+      Designed and built an Arduino-based autonomous car that responds to sensor input and light conditions.
+      The system uses custom Arduino code and external circuitry to control motors and LED indicators.
     </p>
   </section>
 
@@ -73,14 +73,16 @@
       <ul class="small" style="margin:0; padding-left:18px;">
         <li><strong>Goal:</strong> Build a small autonomous car controlled by sensor input using Arduino.</li>
         <li><strong>Constraints:</strong> Limited power, compact size, simple circuitry, and basic components.</li>
-        <li><strong>Your role:</strong> Designed the circuit, wrote the Arduino code, assembled and tested the system.</li>
+        <li><strong>Your role:</strong> Designed the circuit, wrote the Arduino code, assembled, tested, and debugged the system.</li>
         <li><strong>Approach:</strong> Circuit design → Arduino programming → bench testing → full prototype integration.</li>
       </ul>
 
       <h2 class="section-title">What I Learned</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
-        <li>Using transistors to safely drive motors from an Arduino.</li>
-        <li>Debugging embedded systems through iterative testing.</li>
+        <li>Gained a basic understanding of electronic components such as resistors, LEDs, motors, and transistors.</li>
+        <li>Learned how to safely drive motors from an Arduino using a TIP120 transistor.</li>
+        <li>Developed experience reading sonar sensor data and using it to control system behavior.</li>
+        <li>Improved debugging skills by identifying wiring and logic errors through iterative testing.</li>
       </ul>
     </div>
 
@@ -89,16 +91,19 @@
       <h2 class="section-title" style="margin-top:0;">Tools & Skills</h2>
       <div class="badges" style="margin-top:8px;">
         <div class="badge">Arduino</div>
-        <div class="badge">Embedded C</div>
         <div class="badge">Circuit Design</div>
         <div class="badge">Prototyping</div>
         <div class="badge">Testing</div>
+        <div class="badge">Coding</div>
+        <div class="badge">Debugging</div>
       </div>
 
       <h2 class="section-title">Results</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
-        <li>Successfully controlled motors using a TIP120 transistor circuit.</li>
-        <li>Achieved reliable sensor-based activation and LED status indication.</li>
+        <li>Built an autonomous car that detects obstacles up to <strong>3 feet away</strong> using a sonar sensor.</li>
+        <li>Implemented obstacle avoidance behavior when objects are detected within the set distance.</li>
+        <li><strong>Red LED</strong> activates when an object is closer than 3 feet and avoidance logic is triggered.</li>
+        <li><strong>Green LED</strong> turns on when the path is clear and the car moves freely.</li>
       </ul>
 
       <h2 class="section-title">Links</h2>
