@@ -34,12 +34,11 @@
       opacity: .88;
     }
 
-.cards{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
-  gap:16px;
-}
-
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:16px;
+    }
 
     .contact-card{
       display:block;
@@ -91,25 +90,28 @@
     }
 
     @media (max-width: 700px){
-      .contact-hero{ padding:18px; }
+      .cards{
+        grid-template-columns: 1fr;
+      }
+      .contact-hero{
+        padding:18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">☰ Menu</button>
-      <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Project Gallery</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
+<header class="site-header">
+  <div class="navbar container">
     <div class="brand">Contact</div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Project Gallery</a>
+      <a href="cv.html">CV</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
