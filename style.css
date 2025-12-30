@@ -93,3 +93,18 @@ header{ position:sticky; top:0; background:#fff; border-bottom:1px solid #eee; z
 .project-body p{ margin:0; color:#444; font-size:14px; }
 
 .footer{ margin:40px 0 10px; color:#666; font-size:13px; }
+
+/* ===== Project Gallery: Force 2x2 Grid ===== */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Stack to 1 column on small screens */
+@media (max-width: 700px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
