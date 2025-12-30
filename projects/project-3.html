@@ -10,16 +10,13 @@
 
 <header>
   <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">☰ Menu</button>
-      <div class="dropdown-content">
-        <a href="../index.html">Home</a>
-        <a href="../projects.html">Project Gallery</a>
-        <a href="../cv.html">CV</a>
-        <a href="../contact.html">Contact</a>
-      </div>
-    </div>
     <div class="brand">Project 3</div>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Project Gallery</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -65,53 +62,55 @@
     </a>
   </section>
 
-  <!-- Two-column section -->
+  <!-- Two-column section: Overview + Tools/Results (same layout as Project 1) -->
   <section style="margin-top:18px; display:grid; grid-template-columns: 1.2fr 0.8fr; gap:14px;">
 
-    <!-- Overview -->
+    <!-- Left: Overview + What I Learned -->
     <div style="border:1px solid #eee; border-radius:18px; padding:16px; background:#fff;">
       <h2 class="section-title" style="margin-top:0;">Overview</h2>
       <ul class="small" style="margin:0; padding-left:18px;">
         <li><strong>Goal:</strong> Design an ultralight wrench capable of applying 250 in-lb torque to an M8 fastener.</li>
-        <li><strong>Constraints:</strong> Must be less than 32.6 g mass, the handle length must be less than 5 inches and must be machinable with manual milling.</li>
-        <li><strong>Your role:</strong> CAD modeling, by-hand stress analysis, FEA interpretation, manufacturing input.</li>
+        <li><strong>Constraints:</strong> Must be less than 32.6 g mass, handle length under 5 inches, and machinable with manual milling.</li>
+        <li><strong>My role:</strong> CAD modeling, by-hand stress analysis, FEA interpretation, and manufacturing input.</li>
         <li><strong>Approach:</strong> Concept generation → hand calculations → FEA → iterative redesign → machining.</li>
       </ul>
 
-<h2 class="section-title">What I Learned</h2>
-<ul class="small" style="margin:0; padding-left:18px;">
-  <li>Applying beam theory and stress analysis to validate lightweight structural designs.</li>
-  <li>Using FEA to identify stress concentrations and guide geometry refinement.</li>
-  <li>Designing for machining by adapting geometry to available end mills, tolerances, and manual milling constraints.</li>
-</ul>
+      <h2 class="section-title">What I Learned</h2>
+      <ul class="small" style="margin:0; padding-left:18px;">
+        <li>Applying beam theory and stress analysis to validate lightweight structural designs.</li>
+        <li>Using FEA to identify stress concentrations and guide geometry refinement.</li>
+        <li>Designing for machining by adapting geometry to available end mills, tolerances, and manual milling constraints.</li>
+      </ul>
+    </div>
 
+    <!-- Right: Tools + Results + Back link -->
+    <div style="border:1px solid #eee; border-radius:18px; padding:16px; background:#fff;">
+      <h2 class="section-title" style="margin-top:0;">Tools & Skills</h2>
+      <div class="badges" style="margin-top:8px;">
+        <div class="badge">SolidWorks</div>
+        <div class="badge">ANSYS Mechanical</div>
+        <div class="badge">By-Hand Stress Analysis</div>
+        <div class="badge">DFM</div>
+        <div class="badge">Physical Testing</div>
+      </div>
 
-<!-- Tools + Results -->
-<div style="border:1px solid #eee; border-radius:18px; padding:16px; background:#fff;">
+      <h2 class="section-title">Results</h2>
+      <ul class="small" style="margin:0; padding-left:18px;">
+        <li>Achieved a final wrench mass of <strong>~27.7 g</strong>, comfortably below the <strong>32.6 g</strong> requirement.</li>
+        <li>Withstood the required <strong>250 in-lb torque</strong> on an M8 fastener without permanent deformation.</li>
+        <li>FEA showed a maximum <strong>von Mises stress of ~76 MPa</strong>, remaining below allowable stress limits.</li>
+        <li>Passed three-point bend testing with only <strong>elastic deformation</strong> and no structural failure.</li>
+      </ul>
 
-  <h2 class="section-title" style="margin-top:0;">Tools & Skills</h2>
-  <div class="badges" style="margin-top:8px;">
-    <div class="badge">SolidWorks</div>
-    <div class="badge">ANSYS Mechanical</div>
-    <div class="badge">By-Hand Stress Analysis</div>
-    <div class="badge">DFM</div>
-    <div class="badge">Physical Testing</div>
-  </div>
+      <div style="margin-top:14px; display:grid; gap:10px;">
+        <a class="cardlink" href="../projects.html">
+          <strong>Back to Gallery</strong><br><span class="small">Return to projects</span>
+        </a>
+      </div>
+    </div>
 
-  <h2 class="section-title">Results</h2>
-  <ul class="small" style="margin:0; padding-left:18px;">
-    <li>Achieved a final wrench mass of <strong>~27.7 g</strong>, comfortably below the <strong>32.6 g</strong> requirement.</li>
-    <li>Withstood the required <strong>250 in-lb torque</strong> on an M8 fastener without permanent deformation.</li>
-    <li>FEA showed a maximum <strong>von Mises stress of ~76 MPa</strong>, remaining below allowable stress limits.</li>
-    <li>Passed three-point bend testing with only <strong>elastic deformation</strong> and no structural failure.</li>
-  </ul>
+  </section>
 
-  <h2 class="section-title">Links</h2>
-  <div class="actions" style="grid-template-columns: 1fr; margin-top:8px;">
-    <a class="cardlink" href="../projects.html">
-      <strong>Back to Gallery</strong><br>
-      <span class="small">Return to projects</span>
-    </a>
-  </div>
-
-</div>
+</main>
+</body>
+</html>
