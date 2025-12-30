@@ -133,3 +133,22 @@ header{ position:sticky; top:0; background:#fff; border-bottom:1px solid #eee; z
     grid-template-columns: 1fr;
   }
 }
+
+/* === Fix header alignment on all pages === */
+header{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.navbar{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
