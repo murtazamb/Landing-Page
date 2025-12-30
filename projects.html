@@ -8,54 +8,66 @@
 </head>
 <body>
 
-<nav class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="projects.html">Project Gallery</a>
-  <a href="cv.html">CV</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-    </div>
+<header class="site-header">
+  <div class="navbar container">
     <div class="brand">Project Gallery</div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Project Gallery</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
 <main class="container">
-  <p class="small">Click a project title to see details.</p>
+  <section class="page-head">
+    <h1>Project Gallery</h1>
+    <p class="small">Click a project to see details.</p>
+  </section>
 
-  <section class="grid">
+  <section class="grid projects-grid">
 
-    <article class="project">
-      <img src="assets/projects/project1.jpg" alt="Project 1">
-      <div class="project-body">
-        <h3><a href="projects/project-1.html">Fixture for Manufacturing</a></h3>
-        <p>Designed a custom fixture for a UR5e collaborative robot to ensure accurate, repeatable automated sub-assembly operations.</p>
-      </div>
-    </article>
+    <a class="project-card" href="projects/project-1.html" aria-label="Fixture for Manufacturing">
+      <article class="project">
+        <img src="assets/projects/project1.jpg" alt="Fixture for Manufacturing">
+        <div class="project-body">
+          <h3>Fixture for Manufacturing</h3>
+          <p>Designed a custom fixture for a UR5e collaborative robot to ensure accurate, repeatable automated sub-assembly operations.</p>
+        </div>
+      </article>
+    </a>
 
-    <article class="project">
-      <img src="assets/projects/project2.jpg" alt="Project 2">
-      <div class="project-body">
-        <h3><a href="projects/project-2.html">Obstacle Detecting Car</a></h3>
-        <p>Designed and built an autonomous vehicle capable of detecting obstacles within a 3-foot range and executing real-time turning maneuvers to avoid collisions using onboard sensors and control logic.</p>
-      </div>
-    </article>
+    <a class="project-card" href="projects/project-2.html" aria-label="Obstacle Detecting Car">
+      <article class="project">
+        <img src="assets/projects/project2.jpg" alt="Obstacle Detecting Car">
+        <div class="project-body">
+          <h3>Obstacle Detecting Car</h3>
+          <p>Designed and built an autonomous vehicle capable of detecting obstacles within a 3-foot range and executing real-time turning maneuvers to avoid collisions using onboard sensors and control logic.</p>
+        </div>
+      </article>
+    </a>
 
-        <article class="project">
-      <img src="assets/projects/project3.jpg" alt="Project 3">
-      <div class="project-body">
-        <h3><a href="projects/project-3.html">Multi-functional Wrench</a></h3>
-        <p>Designed and manufactured an ultralight wrench with an integrated tire-lever, optimized for strength, low weight, and manufacturability using CAD, FEA, and manual machining.</p>
-      </div>
-    </article>
+    <a class="project-card" href="projects/project-3.html" aria-label="Multi-functional Wrench">
+      <article class="project">
+        <img src="assets/projects/project3.jpg" alt="Multi-functional Wrench">
+        <div class="project-body">
+          <h3>Multi-functional Wrench</h3>
+          <p>Designed and manufactured an ultralight wrench with an integrated tire-lever, optimized for strength, low weight, and manufacturability using CAD, FEA, and manual machining.</p>
+        </div>
+      </article>
+    </a>
 
-    <article class="project">
-      <img src="assets/projects/project4.jpg" alt="Project 4">
-      <div class="project-body">
-        <h3><a href="projects/project-4.html">Breaks for Super Mileage Vehicle</a></h3>
-        <p>Designed a lightweight brake system for the Mass Mileage ultra-efficient vehicle by integrating bicycle disc brake components into the wheel assembly, collaborating with a team of four to balance safety, packaging, and minimal weight.</p>
-      </div>
-    </article>
+    <a class="project-card" href="projects/project-4.html" aria-label="Brakes for Super Mileage Vehicle">
+      <article class="project">
+        <img src="assets/projects/project4.jpg" alt="Brakes for Super Mileage Vehicle">
+        <div class="project-body">
+          <h3>Brakes for Super Mileage Vehicle</h3>
+          <p>Designed a lightweight brake system for the Mass Mileage ultra-efficient vehicle by integrating bicycle disc brake components into the wheel assembly, collaborating with a team of four to balance safety, packaging, and minimal weight.</p>
+        </div>
+      </article>
+    </a>
 
   </section>
 </main>
