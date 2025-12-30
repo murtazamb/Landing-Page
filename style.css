@@ -9,16 +9,58 @@ header{ position:sticky; top:0; background:#fff; border-bottom:1px solid #eee; z
 .navbar{ display:flex; align-items:center; gap:16px; padding:12px 24px; max-width: var(--max); margin:0 auto; }
 .brand{ font-weight:700; }
 
-.dropdown{ position:relative; }
-.dropbtn{ border:1px solid #ddd; background:#fff; padding:8px 10px; border-radius:10px; cursor:pointer; }
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+/* Invisible buffer below the button so the menu doesn't collapse when moving mouse down */
+.dropdown::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:100%;
+  width:100%;
+  height:12px;
+}
+
+.dropbtn{
+  border:1px solid #ddd;
+  background:#fff;
+  padding:8px 10px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
 .dropdown-content{
-  display:none; position:absolute; left:0; top:44px; min-width:190px;
-  border:1px solid #eee; border-radius:12px; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,.08);
+  display:none;
+  position:absolute;
+  left:0;
+  top:calc(100% + 10px);
+  min-width:190px;
+  z-index:9999;
+  border:1px solid #eee;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
   overflow:hidden;
 }
-.dropdown-content a{ display:block; padding:10px 12px; }
-.dropdown-content a:hover{ background:#f6f6f6; }
-.dropdown:hover .dropdown-content{ display:block; }
+
+/* Show on hover OR keyboard focus */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content{
+  display:block;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:10px 12px;
+}
+
+.dropdown-content a:hover{
+  background:#f6f6f6;
+}
+
 
 .hero{
   display:grid; grid-template-columns: 160px 1fr; gap:20px; align-items:center;
